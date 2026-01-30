@@ -257,6 +257,22 @@ footer {
   height: 400px;
 }
 
+.footer-details{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.footer-social-media {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+
 @media screen and (max-width: 576px) {
   .nav-links,
   .btn-nav,
@@ -302,4 +318,8 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+
+  .footer-social-media {
+  grid-template-columns: repeat(2, 1fr);
+}
 }
