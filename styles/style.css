@@ -75,6 +75,7 @@ main > section {
 }
 
 .navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   justify-content: space-around;
   justify-content: space-between;
   align-items: center;
@@ -266,12 +267,19 @@ footer {
     padding-top: 100px;
 }
 
+.footer-brand{
+  font-size: 4rem;
+}
+
 .footer-social-media {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
+.social-media-name{
+    font-weight: 500;
+}
 
 @media screen and (max-width: 576px) {
   .nav-links,
