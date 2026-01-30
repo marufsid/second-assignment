@@ -17,8 +17,8 @@
   display: flex;
 }
 
-.menu{
-    display: none;
+.menu {
+  display: none;
 }
 
 .btn-primary {
@@ -41,9 +41,13 @@ main {
   margin: 0 auto;
 }
 
-.section-title{
-    font-size: 3.5rem;
-    font-weight: 800;
+main > section {
+  margin-top: 120px;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 800;
 }
 
 .paragraph {
@@ -52,12 +56,18 @@ main {
   padding-bottom: 24px;
 }
 
-.center-align{
-    align-items: center;
+.text-center{
+    text-align: center;
 }
-.gap{
-    gap: 8px;
+
+.center-align {
+  align-items: center;
 }
+
+.gap {
+  gap: 8px;
+}
+
 
 /* navbar */
 
@@ -90,7 +100,7 @@ main {
   color: transparent;
 }
 
-header {
+body {
   background-color: #1a0b2e;
 }
 
@@ -128,38 +138,103 @@ header {
   padding: 12px 16px;
   font-size: 1.2rem;
   font-weight: 600;
-  border: 2px solid #00FF88;
+  border: 2px solid #00ff88;
   border-radius: 100px;
 }
 
+.about-cards {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 50px;
+  justify-items: center;
+}
+
+.about-section {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.numbers {
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(0, 255, 136, 1);
+}
+
+.third-section{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.first-grid,
+.second-grid,
+.third-grid,
+.fourth-grid,
+.fifth-grid{
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.first-grid{
+    grid-row: span 2;
+    align-content: center;
+}
+
+.second-grid{
+    grid-column: span 2;
+}
+
+.third-grid{
+    grid-column: span 2;
+}
+
+.fourth-grid{
+    grid-column: span 2;
+}
+
+.grid-title{
+    padding-top: 16px;
+    padding-bottom: 16x;
+}
+
 @media screen and (max-width: 576px) {
-    .nav-links,
-    .btn-nav{
-        display: none;
-    }
+  .nav-links,
+  .btn-nav,
+  .break-point {
+    display: none;
+  }
 
-    .menu{
+  .menu {
     display: block;
-    }
+  }
 
-    .banner{
-        /* width: 100%; */
-    }
+  .navbar {
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 
-    .navbar{
-        justify-content: space-between;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
+  .banner {
+    background-size: 90px, 250px, cover;
+    height: 100%;
+  }
 
-    .banner{
-        background-size: 90px, 250px, cover;
-        height: 100%;
-    }
+  .banner-description {
+    padding-top: 550px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
 
-    .banner-description {
-     padding-top: 550px;
-     padding-bottom: 50px;
-     text-align: center;
-    }
+  .about-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .third-section{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
 }
